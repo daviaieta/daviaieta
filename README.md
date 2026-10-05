@@ -2,7 +2,7 @@
 
 <p align="center">
   <b>Full-stack engineer · 17 · building production software since I was 12</b><br/>
-  CEO &amp; Head of Technology at <b>É A Comunidade</b>
+  Head of Technology at <b>É A Comunidade</b>
 </p>
 
 <p align="center">
@@ -95,5 +95,3 @@ I document what I build — the code, the decisions and the mistakes — on Inst
 <!-- [Instagram](https://instagram.com/HANDLE) · [YouTube](https://youtube.com/@HANDLE) -->
 
 ---
-
-<p align="center"><sub>Off the keyboard: Brazilian jiu-jitsu.</sub></p>
