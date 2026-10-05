@@ -13,7 +13,6 @@
   <img src="https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
   <img src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white" />
-  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" />
 </p>
 
 ---
@@ -26,7 +25,7 @@ const davi = {
   background: "2 years of high school in the US, back in Brazil to finish it",
   languages: ["Portuguese", "English", "Spanish"],
   codingSince: "age 12 — from scratch, before AI did the typing",
-  focus: ["backend architecture", "multi-tenant SaaS", "mobile", "AI-native engineering"],
+  focus: ["backend architecture", "mobile", "AI-native engineering"],
   currently: "shipping the community app to web, iOS and Android",
 } as const;
 ```
@@ -50,22 +49,11 @@ An invite-only social network for the community, mobile-first. One API, three cl
 
 - **Product:** feed, stories, courses (pillar › collection › module), missions with proof review,
   a 10-degree progression system, leaderboards, live sessions and a member directory.
-- **Backend:** Fastify 5 · TypeScript · Prisma · PostgreSQL 16 · Redis (cache, job queues, rate limiting).
+- **Backend:** Fastify 5 · TypeScript · Prisma · PostgreSQL 16.
 - **Clients:** Next.js 15 web app (installable) + native **iOS/Android** app built with Expo, against the same API.
 - **Infra:** Railway (API + Postgres) · Vercel (web) · Cloudflare R2 (media) · Resend (email) · GitHub Actions.
 - **Ownership:** took it from zero to production in September 2026, onboarded the members by bulk
   invite, ran the security and App Store audits, and shipped a full Liquid Glass redesign.
-
-### ⏱️ [TimeFlow](https://github.com/daviaieta/TimeFlow) — `paused`
-Multi-tenant scheduling SaaS for service businesses (barbershops, salons, clinics).
-
-- Tenant isolation on every query, RBAC (`SUPERADMIN` / `ADMIN` / `EMPLOYEE`), token-based invites.
-- Public booking page per business with an **atomic multi-slot claim**: two clients racing for the
-  same slot produce exactly one booking — enforced by the database, not the app.
-- CRM in five phases: customer identity, history, loyalty, magic-link portal, identity merge,
-  idempotency keys and a Postgres-backed shared rate limiter.
-- Stripe subscriptions, R2 uploads, owner dashboard with occupancy heatmap.
-- ~42k lines of TypeScript · 19 models · 15 migrations · 45 test files.
 
 ## How I build
 
@@ -81,11 +69,11 @@ Multi-tenant scheduling SaaS for service businesses (barbershops, salons, clinic
 | Layer | Tools |
 |---|---|
 | Languages | TypeScript, JavaScript, Python, SQL |
-| Backend | Node.js, Fastify, NestJS, Prisma, PostgreSQL, Redis, BullMQ, JWT |
+| Backend | Node.js, Fastify, NestJS, Prisma, PostgreSQL, JWT |
 | Frontend | Next.js (App Router), React, Tailwind CSS, shadcn/ui |
 | Mobile | Expo, React Native, expo-router |
-| Infra | Railway, Vercel, Netlify, Cloudflare (R2 + DNS), Docker, GitHub Actions |
-| Services | Stripe, Resend, AssemblyAI, Anthropic API |
+| Infra | Railway, Vercel, Cloudflare (R2 + DNS), Docker, GitHub Actions |
+| Services | Resend, AssemblyAI, Anthropic API |
 | AI tooling | Claude Code, multi-agent workflows |
 
 ## Building in public
