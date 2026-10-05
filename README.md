@@ -20,7 +20,7 @@
 
 ```ts
 const davi = {
-  role: ["Full-stack engineer", "CEO & Head of Technology @ É A Comunidade"],
+  role: ["Full-stack engineer", "Head of Technology @ É A Comunidade"],
   age: 17,
   base: "Rio de Janeiro, Brazil",
   background: "2 years of high school in the US, back in Brazil to finish it",
